@@ -1,0 +1,78 @@
+{
+/*
+	 // Place your snippets for TypeScript here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+	"Angular Controller": {
+		"prefix": "ngcontroller",
+		"body": [
+			"namespace ${module} {",
+			"'use strict';",
+			"",
+			"export class ${Controller}Controller {",
+			"\tstatic $inject: Array<string> = ['${dependency1}'];",
+			"\tconstructor(private ${dependency1}: ${dependency1Type}) {",
+			"$0",
+			"}",
+			"",
+			"\t${property}: ${propertyType} = ${propertyValue};",
+			"",
+			"\t${fn}() { }",
+			"}",
+			"",
+			"angular",
+			"\t.module('${Module}')",
+			"\t.controller('${Controller}Controller', ${Controller}Controller);",
+			"}"
+		]
+	},
+	"Angular Service": {
+		"prefix": "ngservice",
+		"body": [
+			"namespace ${module} {",
+			"'use strict';",
+			"",
+			"export interface I${Service} {",
+			"\t${serviceFn}: (${dependency1}:${dependency1Type}) => ${returnType};",
+			"}",
+			"export class ${Service} implements I${Service} {",
+			"\tstatic $inject: Array<string> = ['${dependency1}'];",
+			"\tconstructor(private ${dependency1}: ${dependency1Type}) {",
+			"",
+			"}",
+			"",
+			"\t${serviceFn}: (${dependency1}:${dependency1Type}) => ${returnType} = (${dependency1}:${dependency1Type}) => {",
+			"\t\t$0",
+			"\t}",
+			"",
+			"}",
+			"",
+			"angular",
+			"\t.module('${Module}')",
+			"\t.service('${Service}', ${Service});",
+			"}"
+		]
+	},
+	"Angular Module": {
+		"prefix": "ngmodule",
+		"body": [
+			"namespace ${module} {",
+			"\t'use strict';",
+			"",
+			"\tangular.module('${module}', [",
+			"\t$0",
+			"\t]);",
+			"}"
+		]
+	}
+}
