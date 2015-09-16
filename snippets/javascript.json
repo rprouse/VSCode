@@ -13,6 +13,17 @@
 		"description": "Log output to console"
 	}
 */
+    "Immediately-Invoked Function Expression": {
+        "prefix": "iife",
+        "body": [
+			"(function() {",
+			"'use strict';",
+			"",
+			"\t$0",
+			"})();"
+		],
+		"description": "Immediately-Invoked Function Expression"
+    },
 	"Angular Controller": {
 		"prefix": "ngcontroller",
 		"body": [
