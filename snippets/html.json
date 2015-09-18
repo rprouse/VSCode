@@ -1,0 +1,62 @@
+{
+/*
+	 // Place your snippets for HTML here. Each snippet is defined under a snippet name and has a prefix, body and 
+	 // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	 // $1, $2 for tab stops, ${id} and ${id:label} and ${1:label} for variables. Variables with the same id are connected.
+	 // Example:
+	 "Print to console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2"
+		],
+		"description": "Log output to console"
+	}
+*/
+    "HTML 5 Template" : {
+        "prefix": "html5",
+        "body": [
+            "<!doctype html>",
+                "<html class=\"no-js\" lang=\"\">",
+                "\t<head>",
+                "\t\t<meta charset=\"utf-8\">",
+                "\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">",
+                "\t\t<title>$1</title>",
+                "\t\t<meta name=\"description\" content=\"$2\">",
+                "\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+                "",
+                "\t\t<link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">",
+                "\t\t<!-- Place favicon.ico in the root directory -->",
+                "",
+                "\t\t<link rel=\"stylesheet\" href=\"css/normalize.css\">",
+                "\t\t<link rel=\"stylesheet\" href=\"css/main.css\">",
+                "\t\t<script src=\"js/vendor/modernizr-2.8.3.min.js\"></script>",
+                "\t</head>",
+                "\t<body>",
+                "\t\t<!--[if lt IE 8]>",
+                "\t\t\t<p class=\"browserupgrade\">You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/\">upgrade your browser</a> to improve your experience.</p>",
+                "\t\t<![endif]-->",
+                "",
+                "\t\t<!-- Add your site or application content here -->",
+                "\t\t<p>$4</p>",
+                "",
+                "\t\t<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/{{JQUERY_VERSION}}/jquery.min.js\"></script>",
+                "\t\t<script>window.jQuery || document.write('<script src=\"js/vendor/jquery-{{JQUERY_VERSION}}.min.js\"><\/script>')</script>",
+                "\t\t<script src=\"js/plugins.js\"></script>",
+                "\t\t<script src=\"js/main.js\"></script>",
+                "",
+                "\t\t<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->",
+                "\t\t<script>",
+                "\t\t\t(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=",
+                "\t\t\tfunction(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;",
+                "\t\t\te=o.createElement(i);r=o.getElementsByTagName(i)[0];",
+                "\t\t\te.src='https://www.google-analytics.com/analytics.js';",
+                "\t\t\tr.parentNode.insertBefore(e,r)}(window,document,'script','ga'));",
+                "\t\t\tga('create','${3:UA-XXXXX-X}','auto');ga('send','pageview');",
+                "\t\t</script>",
+                "\t</body>",
+                "</html>"
+        ],
+        "description": "A new HTML 5 page"
+    }
+}
